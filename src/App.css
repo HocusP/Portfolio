@@ -1,23 +1,21 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
   background-color: coral;
-  display: flex;
-  justify-content: center;
   position: relative; /* Position the container relative to the body */
+  margin: 0;
+  display: flex; /* Add display flex */
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start; /* Align items to the start of the flex container */
 }
 
 .container {
-  position: absolute; /* Position the container absolutely within the body */
-  top: 0; /* Align the container to the top */
-  right: 0; /* Align the container to the left */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
+  gap: 6em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .item {
@@ -25,15 +23,19 @@ body {
   background-color: black;
 }
 
-h1 {
-  text-align: center;
-}
-
 p {
-  font-size: 20px;
-  text-align: center;
+  font-size: 24px;
+  text-align: left;
+  margin-left: -250%; /* Remove default margin */
 }
 
-img {
+.centerimg {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 300px;
+}
+
+h1 {
+  margin-left: -250%; /* Remove default margin */
+  padding-left: 0;
 }
